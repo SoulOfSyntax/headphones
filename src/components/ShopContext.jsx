@@ -1,4 +1,5 @@
-import {createContext, useContext, useState} from 'react'
+import {createContext, useState} from 'react'
+
 
 export const ShopContext = createContext()
 
@@ -8,9 +9,10 @@ const ShopContextProvider = ({children}) =>{
 
   const [products,setProducts] = useState(PRODUCT_DATA)
 
-  return <ShopContextProvider value={{products}}>
+  return (<ShopContext.Provider value={{products}}>
     {children}
-  </ShopContextProvider>
+  </ShopContext.Provider>
+  )
 }
 
 
