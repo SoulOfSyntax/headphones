@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <div>
       <nav className='flex justify-between bg-stone-800 p-[1.4rem] cursor-pointer'>
-        <Link to='/' ><span className='text-3xl font-bold cursor-pointer'>
-                            <span className='text-amber-600'>Audio</span>
+        <Link to='/' ><span className='text-3xl font-bold cursor-pointer bg-black p-2 rounded-full'>
+                            <span className='text-amber-600 '>Audio</span>
                             <span className='text-red-700'>Wave</span>
                       </span>
         </Link>
