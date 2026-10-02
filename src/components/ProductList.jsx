@@ -8,13 +8,13 @@ const ProductList = () => {
   return (
     <div className=''>
       <h2 className='font-semibold text-6xl p-3 items-center flex justify-center font-mono pt-5 text-red-700 pb-7'>Our Elegant Collection</h2>
-    <div className='grid grid-cols-3 gap-4 p-4'>
+    <div className='grid grid-cols-4 gap-4 p-4'>
       {products.map((product) => {
         const {id,image,title,price} = product
         return(
-          <div key={id} className='flex flex-col  items-center justify-center pt-2 border bg-gray-200 border-gray-300 rounded-md'>
+          <div key={id} className='flex flex-col  items-center justify-center pt-2  hover:bg-gray-300 rounded-md'>
               <Link to={`/product/${id}`}>
-                    <img src={image} alt={title} className='h-[250px] pt-2 w-[250px] rounded rounded-xl transition-all duration-300 ease-in-out hover:scale-110'/>
+                    <img src={image} alt={title} className='h-[250px] pt-2 w-[250px] rounded rounded-xl '/>
               </Link>
               <div className='flex flex-col items-center justify-between object-cover pt-2 pb-2'>
                 <h4 className=' items-center'>{title}</h4>

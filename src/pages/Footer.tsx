@@ -14,7 +14,7 @@ import { IoCardSharp } from "react-icons/io5";
 const Footer = () => {
   return (
     <div className='flex flex-col bg-amber-400'>
-      <div className='flex flex-col-3 justify-between p-5 items-center '>
+      <div className='flex justify-between p-5 items-center '>
         <div className='flex flex-col gap-4 pt-10'>
           <Link to='/'  className='flex justify-center items-center'><span className='flex justify-center text-lg w-[200px] font-bold cursor-pointer bg-black p-2 rounded-full items-center justify-center align-center'>
                                       <span className='text-amber-600 '>Audio</span>
@@ -53,16 +53,16 @@ const Footer = () => {
       </div>
 
 
-      <div className='flex justify-between border border-gray-800 p-2 '>
+      <div className='flex justify-between border border-gray-800 p-3 '>
         <div className='cursor-pointer'>
-          <p>©2026 AudioWave (Pty)Ltd. All rights reserved.</p>
+          <p className='text-sm'>©2026 AudioWave (Pty)Ltd. All rights reserved.</p>
         </div>
-        <div className='flex justify-between gap-3 cursor-pointer'>
-          <p>Privacy Policy</p>
+        <div className='flex text-sm justify-between gap-3 cursor-pointer'>
+          <p >Privacy Policy</p>
           <p>Terms of service</p>
           <p>Cookie Setting</p>
         </div>
-        <div className='flex justify-between gap-4 cursor-pointer align-center justify-center'>
+        <div className='flex  text-sm justify-between gap-4 text-sm cursor-pointer align-center justify-center'>
           <RiVisaFill className='text-3xl text-blue-600'/>
           <IoCardSharp className='text-2xl text-red-600'/>
         </div>

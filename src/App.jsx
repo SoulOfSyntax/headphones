@@ -6,6 +6,7 @@ import Cart from './pages/Cart'
 import Product from './pages/Product'
 import Footer from './pages/Footer'
 
+
 function App() {
   
   return (
